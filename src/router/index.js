@@ -109,7 +109,7 @@ export const constantRoutes = [
         path: 'course/list',
         name: 'CourseList',
         component: () => import('@/views/vod/course/list'),
-        meta: { title: '课程列表' }
+        meta: { title: '课程列表',icon: 'table' }
       },
       {
         path: 'course/info',
@@ -148,7 +148,7 @@ export const constantRoutes = [
     component: Layout,
     redirect: '/vod/teacher/list',
     name: 'vod',
-    meta: { title: '点播管理', icon: 'el-icon-s-help' },
+    meta: { title: '讲师管理', icon: 'el-icon-s-help' },
     children: [
       {
         path: 'teacher/list',

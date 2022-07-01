@@ -38,5 +38,11 @@ export default {
       data: teacher
     })
   },
+  list(){
+    return request({
+      url: `${api_name}/findAll`,
+      method: `get`
+    })
+  }
 
 }
