@@ -183,7 +183,7 @@ export default {
       if (!this.$parent.courseId) {
         this.saveData();
       } else {
-        //this.updateData()
+        this.updateData()
       }
     },
 
