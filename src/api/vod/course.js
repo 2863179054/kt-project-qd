@@ -19,4 +19,19 @@ export default {
       data: courseInfo
     })
   },
+  //id获取课程信息
+  getCourseInfoById(id) {
+    return request({
+      url: `${api_name}/getCourse/${id}`,
+      method: 'get'
+    })
+  },
+  //修改课程信息
+  updateCourseInfoById(courseInfo) {
+    return request({
+      url: `${api_name}/updateCourse`,
+      method: 'put',
+      data: courseInfo
+    })
+  },
 }
